@@ -13,7 +13,7 @@ public class Troll {
         this.dannoSpada2 = 50;
     }
 
-    public boolean attacco (int spada){
+    public void attacco (int spada){
         boolean finePartita = false;
         if(getRandomBoolean()){
             if (spada==1){
@@ -23,10 +23,6 @@ public class Troll {
                 hp-=dannoSpada2;
             }
         }
-        if(hp<=0){
-            finePartita=true;
-        }
-        return finePartita;
     }
 
     @Override
