@@ -29,6 +29,14 @@ public class Troll {
         return finePartita;
     }
 
+    @Override
+    public String toString() {
+        return "Troll{" +
+                "hp=" + hp +
+                "nome=" + nome +
+                '}';
+    }
+
     private boolean getRandomBoolean() { //l'attacco andrà a buon fine o no?
         Random random = new Random();
         return random.nextBoolean();
