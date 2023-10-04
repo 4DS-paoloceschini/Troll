@@ -13,7 +13,23 @@ public class Troll {
         this.dannoSpada2 = 50;
     }
 
-    private boolean getRandomBoolean() {
+    public boolean attacco (int spada){
+        boolean finePartita = false;
+        if(getRandomBoolean()){
+            if (spada==1){
+                hp-=dannoSpada1;
+            }
+            else{
+                hp-=dannoSpada2;
+            }
+        }
+        if(hp<=0){
+            finePartita=true;
+        }
+        return finePartita;
+    }
+
+    private boolean getRandomBoolean() { //l'attacco andrà a buon fine o no?
         Random random = new Random();
         return random.nextBoolean();
     }
