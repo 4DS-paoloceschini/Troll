@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Troll {
     int hp;
     String nome;
@@ -9,5 +11,10 @@ public class Troll {
         this.nome = nome;
         this.dannoSpada1 = 20;
         this.dannoSpada2 = 50;
+    }
+
+    private boolean getRandomBoolean() {
+        Random random = new Random();
+        return random.nextBoolean();
     }
 }
