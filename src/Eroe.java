@@ -7,8 +7,15 @@ public class Eroe {
         this.hp=hp;
     }
 
-    public void setHp(int hp) {
+    public void setHp(double hp) {
         this.hp -= hp;
     }
 
+    @Override
+    public String toString() {
+        return "Eroe{" +
+                "nome='" + nome + '\'' +
+                ", hp=" + hp +
+                '}';
+    }
 }
